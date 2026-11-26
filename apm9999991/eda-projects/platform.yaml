@@ -1,0 +1,7 @@
+platform:
+  name: "APM9999991_SHARED"
+  description: Rulebook source for APM9999991_SHARED
+  scm_type: git
+  scm_url: "git@github.com:maximedulude-ibm/APMs.git"
+  scm_branch: main
+  scm_credential: platform
