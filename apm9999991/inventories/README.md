@@ -16,6 +16,6 @@ lab:
         - demo-host
 ```
 
-Use a real reachable host when you connect a consumer workspace. This
-onboarding workspace does not read this file; it creates
-`APM9999991_inventory` directly.
+Use a real reachable host for a live inventory. The APM folder's HCP
+workspace reads this YAML and creates the inventory. The bootstrap workspace
+owns `APM9999991_inventory`, available to job templates as `platform`.
