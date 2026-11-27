@@ -13,6 +13,6 @@ vendor-scm:
     username: git
 ```
 
-Supply any private key through an approved secret mechanism. This workspace
-does not read this file or create the example credential; it creates the
-default EDA SCM credential directly.
+Do not commit a private key. The APM folder's HCP workspace reads this YAML
+and creates the example credential; the bootstrap workspace owns the default
+EDA SCM credential.
