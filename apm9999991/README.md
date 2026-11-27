@@ -7,7 +7,7 @@ default EDA project.
 
 The Controller project `APM9999991_platform-controller` and the EDA
 project `APM9999991_SHARED` both clone the **whole** `APMs` repository from
-`git@github.com:maximedulude-ibm/APMs.git`. The Controller SCM credential is
+`ssh://git@ssh.github.com:443/maximedulude-ibm/APMs.git`. The Controller SCM credential is
 `APM9999991_platform-scm`; the EDA SCM credential is
 `APM9999991_platform-eda-scm`.
 
