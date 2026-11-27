@@ -40,7 +40,7 @@ locals {
 }
 
 module "aap_platform_user" {
-  source = "git::https://github.com/maximedulude-ibm/hcp-aap-testmax.git//modules/aap-platform-user?ref=main"
+  source = "../modules/aap-platform-user"
 
   organization_name = "APM9999991_SHARED"
 

@@ -9,8 +9,9 @@ set to `apm9999991` and creates the resources declared below. Other APM
 folders use separate workspaces and states, each with its own working
 directory.
 
-This APM's day two workspace calls the AAP module in `hcp-aap-testmax`. Set its
-variables `aap_endpoint`, `aap_username`, and sensitive `aap_password`.
+This APM's day two workspace calls `../modules/aap-platform-user` from the
+same `APMs` checkout. Set its variables `aap_endpoint`, `aap_username`, and
+sensitive `aap_password`.
 Copy `controller_project_id` to `platform_project_id`, plus the matching
 `platform_inventory_id`, `platform_scm_credential_id`, and
 `platform_eda_scm_credential_id` outputs from the bootstrap workspace.
