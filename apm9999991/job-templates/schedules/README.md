@@ -12,5 +12,6 @@ hello-daily:
   enabled: false
 ```
 
-The `hello` key refers to the example in `../README.md`. This onboarding
-workspace does not read schedule YAML, so this file will not start a job.
+The `hello` key refers to the example in `../README.md`. The APM folder's
+HCP workspace reads schedule YAML. This example starts disabled; enable it
+only when you are ready for daily launches.
