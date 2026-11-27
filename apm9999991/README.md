@@ -3,20 +3,17 @@
 This folder is created inside the shared APMs GitHub repository by the
 standalone HCP Terraform AAP workflow. The bootstrap HCP workspace owns the
 AAP organization, teams, default inventory, SCM credentials, Controller
-project, and default EDA project. A day two HCP workspace dedicated to
-`apm9999991` watches the shared `APMs` repository with its working directory
-set to `apm9999991` and creates the resources declared below. Other APM
-folders use separate workspaces and states, each with its own working
-directory.
+project, and default EDA project. It also creates the day two HCP workspace
+`APM9999991` in the `PLATFORM` project. That workspace watches the
+shared `APMs` repository with working directory `apm9999991` and creates
+the resources declared below. Other APM folders use separate workspaces and
+states.
 
 This APM's day two workspace calls `../modules/aap-platform-user` from the
-same `APMs` checkout. Set its variables `aap_endpoint`, `aap_username`, and
-sensitive `aap_password`.
-Copy `controller_project_id` to `platform_project_id`, plus the matching
-`platform_inventory_id`, `platform_scm_credential_id`, and
-`platform_eda_scm_credential_id` outputs from the bootstrap workspace.
-Use the generated `APM9999991_SHARED` organization administrator for this workspace.
-Keep auto-apply disabled if you want to inspect each plan before applying.
+same `APMs` checkout. Bootstrap sets its AAP endpoint, generated
+`APM9999991_SHARED` organization administrator password, and IDs of the default
+project, inventory, and SCM credentials. Auto-apply is disabled so you can
+inspect each plan before applying.
 
 The Controller project `APM9999991_platform-controller` and the EDA
 project `APM9999991_SHARED` both clone the **whole** `APMs` repository from
