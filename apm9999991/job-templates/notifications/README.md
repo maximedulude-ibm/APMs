@@ -16,5 +16,5 @@ hello-webhook:
       success: true
 ```
 
-Replace the sample URL and connect a consumer workspace before using this
-declaration. The onboarding workspace does not read notification YAML.
+Replace the sample URL before committing. The APM folder's HCP workspace
+reads notification YAML and creates the notification for the `hello` job.
