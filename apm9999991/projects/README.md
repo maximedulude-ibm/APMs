@@ -4,9 +4,8 @@ The onboarding workspace already creates `APM9999991_platform-controller`
 from the shared `APMs` repository. It uses the platform-managed
 `APM9999991_platform-scm` credential.
 
-Add declarations for other Controller projects here after an AAP tier
-workspace is connected. Files in this folder are not applied by the
-onboarding workspace.
+Add declarations for other Controller projects here. The APM folder's HCP
+workspace reads them and creates those projects.
 
 For example, `additional.yaml` could describe another project that uses
 the shared repository and the existing SCM credential:
@@ -20,6 +19,6 @@ additional:
   scm_credential: platform
 ```
 
-The `platform` credential key illustrates how a future consumer workspace
-could refer to the Terraform-managed `APM9999991_platform-scm` credential.
-That consumer and key mapping have not been implemented in this demo.
+The `platform` credential key refers to the bootstrap-managed
+`APM9999991_platform-scm` credential. Supply its ID as the second
+workspace's `platform_scm_credential_id` variable.
