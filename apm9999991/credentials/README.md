@@ -12,6 +12,6 @@ machine-lab:
     username: ansible
 ```
 
-The example contains no password or private key. This workspace does not
-read this file or create the example credential; its current SCM credential
-is managed directly by Terraform.
+The example contains no password or private key. Commit `machine-lab.yaml`
+to `APMs/main`; the APM folder's HCP workspace plans and creates this
+credential. The platform SCM credential stays in the bootstrap workspace.
