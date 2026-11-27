@@ -19,5 +19,5 @@ For example, `hello.json` could ask for a message:
 }
 ```
 
-This onboarding workspace does not read survey JSON or attach it to a job
-template. A future consumer workspace must do both.
+The APM folder's HCP workspace reads this JSON. Set `survey: hello` in a
+job template declaration to attach it.
