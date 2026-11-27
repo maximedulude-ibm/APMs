@@ -15,7 +15,7 @@ additional:
   scm_credential: platform
 ```
 
-EDA looks for `rulebooks/` at the shared repository root. This workspace
-does not read additional EDA project declarations. A future consumer
-workspace would need to map `platform` to the existing
-`APM9999991_platform-eda-scm` credential.
+EDA looks for `rulebooks/` at the shared repository root. The APM folder's HCP workspace reads additional EDA project declarations.
+The `platform` credential key maps to the bootstrap-managed
+`APM9999991_platform-eda-scm` credential using its ID from the first
+workspace.
