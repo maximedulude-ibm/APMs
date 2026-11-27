@@ -14,6 +14,6 @@ demo:
       job_template: hello
 ```
 
-This onboarding workspace does not read workflow YAML. A future consumer
-workspace must create the referenced `hello` job template before this
-example can be used.
+The APM folder's HCP workspace reads workflow YAML and creates the workflow.
+The referenced `hello` job template must also be declared under
+`job-templates/`.
